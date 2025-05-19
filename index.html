@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta name="description" content="Upptäck komforten hos Comfy! Vi erbjuder ett brett utbud av kvalitativa sängar och soffor för alla hem. Hitta din perfekta möbel och sov eller slappna av i stil">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMFY</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+           
+            
+            <h1>COMFY</h1>
+            <h2>Upptäck våra stilrena och bekväma soffor som passar alla hem. Från eleganta hörnsoffor till praktiska bäddsoffor, här hittar du något för varje stil och behov. Ge ditt vardagsrum en lyxig känsla idag!</h2>
+        </header>
+
+        <nav class="navbar">
+            <div class="brand-title">Meny</div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="box">
+                    <div class="inner-box">
+                        <img src="bilder/Comfy 1.png"alt=""class="image"id="image1-1"style="display:block;">
+                        <img src="bilder/comfy 2.png" alt="" class="image" id="image1-2" style="display: none;">
+                    </div>
+                    <div class="text-content">
+                        <p class="title">Beige soffa</p>
+                        <p class="description">U-soffa Nevada XL Divan Vänster
+                            Beige</p>
+                        <p class="price">12 999kr</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inner-box">
+                        <img src="bilder/comfy 3.png" alt="" class="image" id="image2-1" style="display: block;">
+                        <img src="bilder/comfy 4.png" alt="" class="image" id="image2-2" style="display: none;">
+                    </div>
+                    <div class="text-content">
+                        <p class="title">Marin-blå soffa</p>
+                        <p class="description"> Soffa med Schäslong Armunia</p>
+                        <p class="price">12 999kr</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inner-box">
+                        <img src="bilder/comfy 5.png" alt="" class="image" id="image3-1" style="display: block;">
+                        <img src="bilder/comfy 6.png" alt="" class="image" id="image3-2" style="display: none;">
+                    </div>
+                    <div class="text-content">
+                        <p class="title">Dubbelsäng</p>
+                        <p class="description">Komplett Sängpaket Olivia 160x200 Diamant Sänggavel Beige</p>
+                        <p class="price">11 000kr</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inner-box">
+                        <img src="bilder/comfy 7.png" alt="" class="image" id="image4-1" style="display: block;">
+                        <img src="bilder/comfy 8.png" alt="" class="image" id="image4-2" style="display: none;">
+                    </div>
+                    <div class="text-content">
+                        <p class="title">Bord & Stolar</p>
+                        <p class="description">Matgrupp Suzon 200 cm med 6 Hermione Fåtölj</p>
+                        <p class="price">6000kr</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 COMFY. Alla rättigheter förbehållna.</p>
+        </footer>
+    </div>
+   
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const innerBoxes = document.querySelectorAll('.inner-box');
+        
+            innerBoxes.forEach(box => {
+                const images = box.querySelectorAll('.image');
+        
+                box.addEventListener('mouseenter', () => {
+                    images[0].style.display = 'none';
+                    images[1].style.display = 'block';
+                });
+        
+                box.addEventListener('mouseleave', () => {
+                    images[0].style.display = 'block';
+                    images[1].style.display = 'none';
+                });
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>
