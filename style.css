@@ -129,6 +129,9 @@ main {
     width: 100%;
     max-width: 300px;
 }
+.image2 {
+    display: none;
+}
 
 .image {
     width: 100%;
